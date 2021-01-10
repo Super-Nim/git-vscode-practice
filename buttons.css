@@ -1,0 +1,18 @@
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px 8px 5px;
+
+}
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: aqua;
+    }
+}
