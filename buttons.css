@@ -2,17 +2,42 @@ button {
     border-radius: 5px;
     color: white;
     background-color: blue;
-    padding: 5px 10px 8px 5px;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
 
 }
 
 button:hover {
     animation-name: background-color;
-    animation-duration: 500ms;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
 
 @keyframes background-color {
-    100% {
+    0% {
         background-color: aqua;
+        
+        box-shadow: 0 0 5px aqua;
     }
+    50% {
+        background-color: fuchsia;
+        box-shadow: 0 0 20px fuchsia;
+        
+    }
+    100% {
+        background-color: darkorange;
+        box-shadow: 0 0 5px darkorange;
+        
+
+    }
+}
+
+#donate {
+    left: 27%;
+    
+}
+#receive {
+    right: 56%;
 }

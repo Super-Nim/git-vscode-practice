@@ -1,9 +1,26 @@
+main {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+main > h1, p { /*this appears to be a class selector applying the parent class's features*/
+    margin: 10px;
+    padding: 5px;
+}
 body {
     background-color: beige;
 }
 
+
 h1 {
     color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif; /* note the font fallbacks*/
 }
 
 p {
@@ -12,11 +29,17 @@ p {
 
 #p1 {
     color: purple;
-    padding: 40px;
+    
 }
 
 #p2 {
+
     color: green;
-    padding: 80px;
+    
 }
+
+
+
+
+
 
