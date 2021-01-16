@@ -1,9 +1,11 @@
 button {
-    border-radius: 5px;
-    color: white;
-    background-color: blue;
-    padding: 10px 10px 10px 10px;
-    position: fixed;
+    border-radius: 10%;
+    color: black;
+    background-color: floralwhite;
+    padding: 50px 100px 50px 100px;
+    position: relative;
+    font-size: 30px;
+    text-size-adjust: 1;
 
 }
 
@@ -21,23 +23,20 @@ button:hover {
         
         box-shadow: 0 0 5px aqua;
     }
-    50% {
-        background-color: fuchsia;
-        box-shadow: 0 0 20px fuchsia;
-        
-    }
     100% {
-        background-color: darkorange;
-        box-shadow: 0 0 5px darkorange;
+        background-color:pink;
+        box-shadow: 0 0 20px pink;
         
-
     }
+    
 }
 
 #donate {
-    left: 27%;
+    top: 40%;
+    left: 20%; /* these are offset values for relative positon*/
     
 }
 #receive {
-    right: 56%;
+    top: 10%;
+    left: 50%;
 }

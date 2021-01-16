@@ -4,18 +4,20 @@ main {
     background-color: lightgray;
 }
 
-main > h1, p { /*this appears to be a class selector applying the parent class's features*/
-    margin: 10px;
+/*main > h1, p { /*this appears to be a class selector applying the parent class's features*/
+    /*margin: 10px;
     padding: 5px;
 }
+*/
 body {
-    background-color: beige;
+    background-color:cornflowerblue;
 }
 
 
 h1 {
-    color: blue;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     
 }
 
@@ -24,19 +26,64 @@ h2 {
 }
 
 p {
-    color: black;
+    font-size: 2em; /* 2em is 2x the font size of the current element's parent*/
 }
 
-#p1 {
-    color: purple;
+.container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 400px; /* width of the entire container*/
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr;/*3 columns (1fr 1fr 1fr) wide*/
+    grid-template-rows: 50px auto 1fr auto; /*4 rows (50px auto 1fr auto) tall*/
+    grid-gap: 10px; /*one value creates a gap for between all rows/columns*/
+    grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+}
+
+.div1 {
+    background: lightgreen;
+    /*grid-area: 2/1/3/4; /*between the 2nd and 3rd horizontal lines, between 1st and 4th column lines*/
+    grid-area: header;
+}
+
+.div2 {
+    background: lightcoral;
+    grid-area: advert;
+   
+}
+
+.div3 {
+    background: lightskyblue;
+    grid-area: content;
+    
+   
+}
+
+.div4 {
+    background: red;
+    grid-area: footer;
     
 }
 
-#p2 {
-
-    color: green;
-    
+@media (min-width: 400px) {
+    .container {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header header"
+            "advert content"
+            "footer footer";
+    }
 }
+
+
+
+
 
 
 
