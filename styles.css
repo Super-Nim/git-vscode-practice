@@ -1,3 +1,7 @@
+html {
+    font-size: 100%; /*font size of root element*/
+}
+
 main {
     margin: 0;
     padding: 5px;
@@ -11,6 +15,7 @@ main {
 */
 body {
     background-color:cornflowerblue;
+    
 }
 
 
@@ -23,6 +28,8 @@ h1 {
 
 h2 {
     font-family: Arial, Helvetica, sans-serif; /* note the font fallbacks*/
+    color: white;
+    text-align: center;
 }
 
 p {
@@ -30,17 +37,17 @@ p {
 }
 
 .container {
-    font-size: 1.5em;
-    height:500px;
-    
+    min-height: 100vh; /*100% of the viewport height*/
+    font-size: 1.5em;    
     width: 100%; /* width of the entire container*/
     background: lightgray;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;/*3 columns (1fr 1fr 1fr) wide*/
-    grid-template-rows: 1fr 1fr 1fr; /*4 rows (50px auto 1fr auto) tall*/
+    grid-template-columns: repeat(3, 1fr);/*3 columns (1fr 1fr 1fr) wide*/
+    grid-template-rows: auto 25vh auto auto; /*4 rows (50px auto 1fr auto) tall*/
     grid-gap: 10px; /*one value creates a gap for between all rows/columns*/
     grid-template-areas: 
-        "header1 header2 header3"
+        "header1 . header3"
+        "image1 image2 image3"      
         "content1 content2 content3"
         "footer footer footer"
         ;
@@ -63,22 +70,30 @@ p {
 }
 
 .item3{
-    background: lightskyblue;
-    grid-area: 2/2/3/3;   
+    /*background: lightskyblue;*/
+    grid-area: image2;   
    
 }
 
-.item4 {
-    background: lightskyblue;
-    grid-area: footer;
+.item3-1 {
+    grid-area: content1;
     
-
 }
 
-.item5 {
-    background: red;
+.item3-2 {
+    grid-area: content3;
+}
+
+
+.item4 {
+    background: white;
     grid-area: footer;
+    text-align: center;
     
+}
+
+.ulbp {
+    list-style-type: none; /*remove bullet points*/
 }
 /*
 @media (min-width: 400px) {
