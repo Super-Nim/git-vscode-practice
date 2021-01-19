@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* { /*apply to every element*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a { /*apply to li items and a tags specifically*/
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+#contact {
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1); /*alpha value = 1*/
+    border: none;
+    border-radius: 50px;
+    cursor: pointer
+    transition: all 0.3s ease 0s;
+
+}
+
+#contact:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 10vw; /*10% of the viewport height*/
+    height: auto;
+    margin-right: auto; /*create a margin to the right automatically*/
+}
+
+
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li { /*target each individual item*/
+    display: inline-block; /*place them horizontally*/
+    padding: 0px 20px; /*0px on top/bottom 20px left/right*/
+}
+
+.nav-links li a { /*target the nav-links items and the a tags within them*/
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover { /*hover pseudo-class defines the state when hovered over*/
+    color: #0088a9;
+}
+
+

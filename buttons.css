@@ -21,7 +21,7 @@ button:hover {
     0% {
         background-color: aqua;
         
-        box-shadow: 0 0 5px aqua;
+        box-shadow: 0 0 2px aqua;
     }
     100% {
         background-color:pink;
