@@ -27,7 +27,7 @@ li, a { /*apply to li items and a tags specifically*/
     background-color: rgba(0,136,169,1); /*fully opaque, alpha=1*/
     border: none;
     border-radius: 50px;
-    cursor: pointer
+    cursor: pointer;
     transition: all 0.3s ease 0s;
 
 }
@@ -62,7 +62,7 @@ header {
     padding: 0px 20px; /*0px on top/bottom 20px left/right*/
 }
 
-.nav-links li a { /*target the nav-links items and the a tags within them*/
+.nav-links li a { /*target the nav-links items and the <a> tags within them*/
     transition: all 0.3s ease 0s;
 }
 
@@ -72,10 +72,10 @@ header {
 
 .bottom {
     border-bottom: 2px solid whitesmoke;
-    margin-bottom: 20px;
+    margin-bottom: 20vh;
     box-sizing: border-box;
     display: block;
-    padding: 0px 0px 10vh 0px;
+    padding: 0px;
     
 }
 
