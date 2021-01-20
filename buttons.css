@@ -1,11 +1,13 @@
+
+
 button {
-    border-radius: 10%;
+    border-radius: 25px; /*25px provides more rounded borders*/
     color: black;
     background-color: whitesmoke;
     padding: 25px 50px 25px 50px;
-   /* position: relative;*/
     font-size: 1.2em;
     text-size-adjust: 1;
+    
 
 }
 
@@ -15,6 +17,7 @@ button:hover {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
+    cursor: pointer;
 }
 
 @keyframes background-color {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 html {
     font-size: 100%; /*font size of root element*/
 }
@@ -38,6 +40,7 @@ h2 {
     text-align: center;
 }
 
+
 p {
     font-size: 2em; /* 2em is 2x the font size of the current element's parent*/
 }
@@ -45,11 +48,12 @@ p {
 .container { /*for layout of the spacing between items and their positioning*/
     
     display: flex;
+    flex-wrap: wrap; /*items can flow into multiple rows when screen shrinks*/
     justify-content: space-around;
-    margin: 40px auto 0 auto; /*create space between flex items*/s
+   
+    margin: 40px auto 0 auto; /*create space between flex items*/
     /*justify-content: space-around; /*evenly spaces flexbox container around its items*/
     /*align-items: center; /*place flex item along main axis*/
-    /*flex-wrap: wrap;*/
     
     
 }
@@ -59,6 +63,7 @@ p {
     margin: 10px; /*space around each flex item*/
     border: 3px black;
     background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .flexbox-content {
@@ -69,31 +74,46 @@ p {
 }
 
 .item1 { /*donate button*/
-    min-height: 100px;
+    height: 100px;
+    min-height: 50px;
 }
 
 .item2 { /*receive button*/
-    min-height: 200px;
+    height: 100px;
+    min-height: 50px;
+
+}
+
+.item1-text { /*text box below donate*/
+    height: 20vh;
+    width: 40vw;
+    border-style: double;
+    border-color:#24252A;
+    border-width: 5px;
+    
+
+}
+
+.item2-text { /*text box below receive*/
+    height: 20vh;
+    width: 40vw;   
+    
 }
 
 .item-image { 
     min-height: 200px;
     min-width: 300px;
+    
 }
-
-
-
-
-
-
-
-
-
-
 
 .ulbp {
     list-style-type: none; /*remove bullet points*/
+    text-align: center;
 }
+
+
+
+
 /*
 @media (min-width: 400px) {
     .container {

@@ -16,7 +16,7 @@ li, a { /*apply to li items and a tags specifically*/
 
 }
 
-#contact {
+#sign-up {
     margin-left: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -24,7 +24,7 @@ li, a { /*apply to li items and a tags specifically*/
     color: #edf0f1;
     text-decoration: none;
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1); /*alpha value = 1*/
+    background-color: rgba(0,136,169,1); /*fully opaque, alpha=1*/
     border: none;
     border-radius: 50px;
     cursor: pointer
@@ -32,8 +32,9 @@ li, a { /*apply to li items and a tags specifically*/
 
 }
 
-#contact:hover{
+#sign-up:hover{
     background-color: rgba(0,136,169,0.8);
+    cursor: pointer;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
 
 .logo {
     cursor: pointer;
-    width: 10vw; /*10% of the viewport height*/
+    width: 5vw; /*5% of the viewport height*/
     height: auto;
     margin-right: auto; /*create a margin to the right automatically*/
 }
@@ -67,6 +68,14 @@ header {
 
 .nav-links li a:hover { /*hover pseudo-class defines the state when hovered over*/
     color: #0088a9;
+}
+
+.bottom {
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    
 }
 
 

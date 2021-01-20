@@ -1,0 +1,6 @@
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap; /*items can flow into multiple rows when screen shrinks*/
+    justify-content: space-around;
+    margin: 40px auto 0 auto;
+}
