@@ -33,7 +33,7 @@ li, a { /*apply to li items and a tags specifically*/
 }
 
 #sign-up:hover{
-    background-color: rgba(0,136,169,0.8);
+    background-color: rgba(0,136,169,0.8); /*alpha/opacity value drops when hovered*/
     cursor: pointer;
 }
 
@@ -73,8 +73,9 @@ header {
 .bottom {
     border-bottom: 2px solid whitesmoke;
     margin-bottom: 20px;
-    width: 100%;
+    box-sizing: border-box;
     display: block;
+    padding: 0px 0px 10vh 0px;
     
 }
 

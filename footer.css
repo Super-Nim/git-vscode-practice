@@ -1,6 +1,25 @@
-.footerContainer {
+footer {
     display: flex;
     flex-wrap: wrap; /*items can flow into multiple rows when screen shrinks*/
     justify-content: space-around;
+    padding: 20vh 0px 0px 0px; /*space above the footer*/
     margin: 40px auto 0 auto;
 }
+
+.footer-links {
+    list-style-type: none; /*remove bullet points*/
+    text-align: center;
+}
+
+.footer-links li {
+    padding: 20px;
+}
+
+.footer-links .child2 {
+    transition: all 0.3s ease 0s; /*all refers to all the properties transition: color, padding etc*/
+}
+
+.footer-links .child2 :hover { /*child2 is the contact link*/
+    color: #0088a9;
+}
+
