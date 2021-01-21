@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+  
 }
 
 li, a { /*apply to li items and a tags specifically*/
@@ -42,6 +42,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    background-color: #24252a;
 }
 
 .logo {
@@ -50,8 +51,6 @@ header {
     height: auto;
     margin-right: auto; /*create a margin to the right automatically*/
 }
-
-
 
 .nav-links {
     list-style: none;

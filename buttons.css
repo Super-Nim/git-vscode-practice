@@ -2,8 +2,8 @@
 
 button {
     border-radius: 25px; /*25px provides more rounded borders*/
-    color: black;
-    background-color: whitesmoke;
+    color: white;
+    background-color: #24252a;
     padding: 25px 50px 25px 50px;
     font-size: 1.2em;
     text-size-adjust: 1;
@@ -27,8 +27,8 @@ button:hover {
         box-shadow: 0 0 2px aqua;
     }
     100% {
-        background-color:pink;
-        box-shadow: 0 0 20px pink;
+        background-color:aqua;
+        box-shadow: 0 0 20px aqua;
         
     }
     
