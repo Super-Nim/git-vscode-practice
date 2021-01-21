@@ -4,7 +4,7 @@ footer {
     justify-content: space-around; 
     flex-direction: column; /*as opposed to row used in navbar*/
     align-items: center; /*align columns in center of container*/
-    padding: 10vh 0px 0px 0px; /*space above the footer*/
+    padding: 8vh 0px 0px 0px; /*space above the footer*/
     margin: 40px auto 0 auto;
     background: #c4c4c4; /*color of footer's background, excludes li items*/
     min-height: 10vh;
