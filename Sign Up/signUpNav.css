@@ -1,0 +1,35 @@
+* { /*this magical beauty pushes the top flexbox inline with the browser window*/
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+
+header {
+    display: flex;
+    justify-content:flex-start;
+    align-items:center; /*aligned centrally along cross axis of container*/
+    padding: 30px 10%;
+    background-color: #24252a; 
+
+}
+
+.logo {
+    cursor: pointer;
+    width: 5vw;
+    
+    
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    margin-left: 30vw;
+    
+   
+}
