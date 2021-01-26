@@ -9,27 +9,7 @@ body {
 }
 
 
-.signUp-Header { /*sort out the header*/
-    display: flex;
-    justify-content: flex-start;
-    align-items:center; /*aligned centrally along cross axis of container*/
-    padding: 30px 10%; /*30px top/bottoom, 10% of the width is occupied*/
-    min-height: 30px;
-    background-color: #24252a; 
 
-}
 
-.logo {
-    cursor: pointer;
-    width: 5vw;
-    margin-right: 30vw;
-      
-}
 
-h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10vw;
-    
-}
 

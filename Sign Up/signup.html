@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="signUpNav.css">
     <link rel="stylesheet" href="signUpForm.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/Users/mwo24/Documents/The Nim Project/VScode/Homepage/nav.css">
     <link rel="stylesheet" href="/Users/mwo24/Documents/The Nim Project/VScode/Homepage/footer.css">
+    
 </head>
 <body>
-    <header class="signUp-Header">
-        <img class="logo" src="/Users/mwo24/Documents/The Nim Project/VScode/Homepage/earth-globe.png" alt="logo">
-        <h1>Sign Up</h1>
+    <header>
+        <img class="logo"src="/Users/mwo24/Documents/The Nim Project/Vscode/Homepage/earth-globe.png" alt="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Cryptocurrency</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>    
+            </nav>
+            <a class="cta" href="#"><button id="sign-up">Sign Up</button></a> 
+       
     </header>
     
     <main>
-        <form id="form">
+        <h1>Sign up</h1>
+        <form id="form"> <!--id="form" is for screen reader/input?-->
             <div class="container"> <!--entire form has padding: 12vh 10%;-->
                 <label for="First-Name"><b>First Name:</b></label>              
                 <input class="w3-input" type="text" placeholder="Enter First Name" name="First-Name" id="First-Name" required>
@@ -62,7 +74,7 @@
             <img class="sm-icon" src="/Users/mwo24/Documents/The Nim Project/VScode/Homepage/linkedin.png" alt="linkedin">
         </div>
         <ul class="footer-links">                 
-            <li class="child2" ><a href="#">Contact</a></li>
+            <li class="child2" ><a class="contact" href="#">Contact</a></li>
             <li>© Copyright 2021 The Nim Project. All rights reserved.</li>                   
         </ul>
 
